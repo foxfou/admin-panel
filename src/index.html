@@ -1,18 +1,77 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <main>
-        <section>
-            <form action="" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="ie=edge" />
+        <title>Auth</title>
+    </head>
+    <body class="flex min-h-screen items-center justify-center bg-[#ededed]">
+        <main>
+            <section>
+                <form
+                    action="#"
+                    class="flex flex-col gap-6 rounded-2xl bg-surface px-10 py-6 shadow-xl"
+                >
 
-            </form>
-        </section>
-    </main>
-</body>
+                    <h1 class="text-2xl font-medium">Greetings traveler</h1>
+
+                    <div class="group relative">
+
+                        <input
+                            id="login"
+                            type="email"
+                            required
+                            class="peer h-14 w-[250px] rounded-md border border-[#79747E] bg-surface py-4 pl-4 placeholder-[#49454F] outline-none invalid:border-error invalid:text-error disabled:opacity-25 group-focus-within:border-2 group-focus-within:border-primary group-focus-within:placeholder-surface invalid:group-focus-within:border-error group-focus-within:invalid:text-error"
+                            placeholder="Username"
+                        />
+
+                        <label
+                            for="login"
+                            class="absolute left-[12px] top-[-10px] z-10 hidden bg-surface px-1 text-sm text-[#49454F] group-focus-within:block group-focus-within:text-primary peer-invalid:text-error peer-invalid:group-focus-within:text-error"
+                        >
+                            Username
+                        </label>
+                    </div>
+
+                    <div class="group relative">
+
+                        <input
+                            id="password"
+                            type="password"
+                            minlength="8"
+                            required
+                            class="peer h-14 w-[250px] rounded-md border border-[#79747E] bg-surface py-4 pl-4 placeholder-[#49454F] outline-none invalid:border-error invalid:text-error disabled:opacity-25 group-focus-within:border-2 group-focus-within:border-primary group-focus-within:placeholder-surface invalid:group-focus-within:border-error group-focus-within:invalid:text-error"
+                            placeholder="Password"
+                        />
+
+                        <label
+                            for="password"
+                            class="absolute left-[12px] top-[-10px] z-10 hidden bg-surface px-1 text-sm text-[#49454F] transition-all group-focus-within:block group-focus-within:text-primary peer-invalid:text-error peer-invalid:group-focus-within:text-error"
+                        >
+                            Password
+                        </label>
+
+                        <a
+                            href="#"
+                            class="ml-4 mt-1 block text-xs text-primary"
+                        >
+                            Reset password
+                        </a>
+
+                    </div>
+
+                    <button
+                        class="h-10 rounded-full bg-primary font-medium text-white hover:opacity-90 active:text-black/60 active:opacity-80 disabled:bg-opacity-15 disabled:text-black/20">
+                        Sing in
+                    </button>
+
+                </form>
+            </section>
+        </main>
+    </body>
 </html>

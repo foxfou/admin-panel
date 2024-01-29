@@ -6,7 +6,7 @@ module.exports = {
   devServer: {
     watchFiles: ["src/**/*"],
     open: true,
-    port: 3000,
+    port: 9000,
   },
   entry: './src/index.js',
   output: {
