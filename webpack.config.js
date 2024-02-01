@@ -24,6 +24,6 @@ module.exports = {
     ],
   },
   plugins: [new HtmlWebpackPlugin({
-     template: path.resolve(__dirname, 'src', 'dashboard.html')
+     template: path.resolve(__dirname, 'src', 'dialog.html')
   })],
 }

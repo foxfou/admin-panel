@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body
+        class="text-main flex min-h-screen items-center justify-center bg-[#ededed]">
+        <div
+            class="flex flex-col gap-6 rounded-2xl bg-white px-10 py-6 shadow-xl">
+
+            <div class="flex justify-between">
+
+                <h3 class="text-2xl font-medium">This is simple example</h3>
+
+                <button class="-mr-2 p-1">
+                    <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <title>window-close</title>
+                        <path
+                            d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <div class="flex gap-6">
+
+                <div class="group relative">
+                    <input
+                        id="login"
+                        type="email"
+                        required
+                        class="border-border h-14 w-[250px] rounded-md border py-4 pl-4 placeholder-[#49454F] outline-none disabled:opacity-25 group-focus-within:border-2 group-focus-within:border-primary group-focus-within:placeholder-surface"
+                        placeholder="Username" />
+
+                    <label
+                        for="login"
+                        class="absolute left-[12px] top-[-10px] z-10 hidden bg-white px-1 text-sm text-[#49454F] group-focus-within:block group-focus-within:text-primary">
+                        Select
+                    </label>
+
+                </div>
+
+                <div class="group relative">
+
+                    <select
+                        id="select"
+                        type="sele"
+                        required
+                        class="border-border peer h-14 w-[250px] rounded-md border py-4 pl-4 placeholder-[#49454F] outline-none invalid:border-error invalid:text-error disabled:opacity-25 group-focus-within:border-2 group-focus-within:border-primary group-focus-within:placeholder-surface invalid:group-focus-within:border-error group-focus-within:invalid:text-error">
+                        <optgroup label="Swedish Cars">
+
+                            <option value="volvo">Volvo</option>
+
+                            <option value="saab">Saab</option>
+
+                        </optgroup>
+                    </select>
+
+                    <label
+                        for="select"
+                        class="absolute left-[12px] top-[-10px] z-10 hidden bg-white px-1 text-sm text-[#49454F] group-focus-within:block group-focus-within:text-primary peer-invalid:text-error peer-invalid:group-focus-within:text-error">
+                        Username
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="">
+                <p class="max-w-[524px]">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has
+                </p>
+            </div>
+
+            <div class="group relative">
+
+                <textarea
+                    placeholder="Textarea type text..."
+                    class="border-border peer h-24 w-[524px] resize-none rounded-md border py-4 pl-4 placeholder-[#49454F] outline-none invalid:border-error invalid:text-error disabled:opacity-25 group-focus-within:border-2 group-focus-within:border-primary group-focus-within:placeholder-surface invalid:group-focus-within:border-error group-focus-within:invalid:text-error"></textarea>
+
+                <label
+                    class="absolute left-[12px] top-[-10px] z-10 hidden bg-white px-1 text-sm text-[#49454F] group-focus-within:block group-focus-within:text-primary">
+                    Textarea
+                </label>
+
+            </div>
+
+            <div class="flex items-center">
+
+                <input
+                    id="checked-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="border-border peer ml-1 h-5 w-5 rounded bg-gray-100 text-primary" />
+
+                <label
+                    for="checked-checkbox"
+                    class="ms-2 peer-disabled:opacity-50">
+                    Checked state
+                </label>
+
+            </div>
+
+            <div class="flex items-center">
+
+                <input
+                    id="checked-radio"
+                    type="radio"
+                    value=""
+                    class="border-border peer ml-1 h-5 w-5 rounded bg-gray-100 text-primary" />
+
+                <label
+                    for="checked-radio"
+                    class="ms-2 peer-disabled:opacity-50">
+                    Checked radio
+                </label>
+
+            </div>
+
+            <div class="flex items-center gap-4">
+
+                <button
+                    class="inline-flex h-10 items-center justify-center gap-2 rounded-full bg-primary px-16 py-4 text-white active:bg-primary/60 enabled:hover:bg-primary/80 disabled:bg-black/30 disabled:text-black disabled:opacity-50">
+                    Create
+                </button>
+
+                <button
+                    class="border-border disabled:text-main inline-flex h-10 items-center justify-center gap-2 rounded-full border px-10 py-4 text-primary active:bg-primary/20 enabled:hover:bg-surface disabled:opacity-50">
+                    Cansel
+                </button>
+
+            </div>
+
+        </div>
+    </body>
+</html>
